@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const mongoose = require('mongoose')
 require('dotenv').config();
-var PORT =process.env.Port
+var PORT =process.env.PORT || 3000;
 app.set('view engine','ejs')
 const path =require('path') 
 const cors = require('cors');
